@@ -32,10 +32,13 @@ Resource
 1. __[BitTiger Project: AppStore - Crawler]__ https://slack-files.com/T0GUEMKEZ-F0J4G9QTT-274d3bc97e
 1. __[BitTiger Project: AppStore - Recommender]__ https://slack-files.com/T0GUEMKEZ-F0J4G9QTT-274d3bc97e
 
-Language & Framework
+Language, Framework & Methodology
 --------------------
 
-+ Python
++ Python 2.7.10, and 'pip install' following:
+  + pylint
+  + coverage
++ Test Driven Development (TDD)
 
 Development Guildlines
 ----------------------
