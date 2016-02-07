@@ -13,13 +13,13 @@ Based on our experiences on web development and descriptions metioned above, we 
 * __[2016/02/05 - 2016/02/07]__ Project Selection, Plan Discussion, and Proposal Draft Writing
 * __[2016/02/08 - 2016/02/24]__ System Design, Resource Discovery, Project Implementation, Document Writing 
   * crawler
-    * Follow the code of Bittiger tutorial
-    * Modify the code for another appstore, run it locally
+    * Follow and learn the code of Bittiger tutorial
+    * Re-write the code for another appstore, run it locally
     * Modify the code for server (multiple workers)
     * Deploy the code on server
   * recommender
-    * Follow the code of Bittiger tutorial
-    * Modify the code for another appstore, run it locally
+    * Follow and learn the code of Bittiger tutorial
+    * Re-write the code for another appstore, run it locally
     * Modify the code for server (multiple workers)
     * Deploy the code on server
 * __[2016/02/25 - 2016/02/29]__ User Manual Writing and Video Presentation Making
