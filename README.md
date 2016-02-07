@@ -39,7 +39,10 @@ Language, Framework & Methodology
   + pylint
   + coverage
 + Test Driven Development (TDD)
-  + http://chimera.labs.oreilly.com/books/1234000000754/index.html 
+  + http://chimera.labs.oreilly.com/books/1234000000754/index.html
+  + write test first, and then write code to make the test success
+  + for each push, need to ensure the new code does not break any of the tests (add and commit are still ok if the tests fail; just do not push to the github)
+  + need to write tests to ensure 100% coverage (waiver is allowed case-by-case) for every new code
 
 Development Guildlines
 ----------------------
