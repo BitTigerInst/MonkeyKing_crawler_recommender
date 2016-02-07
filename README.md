@@ -39,6 +39,7 @@ Language, Framework & Methodology
   + pylint
   + coverage
 + Test Driven Development (TDD)
+  + http://chimera.labs.oreilly.com/books/1234000000754/index.html 
 
 Development Guildlines
 ----------------------
