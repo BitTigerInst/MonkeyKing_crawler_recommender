@@ -43,6 +43,12 @@ Language, Framework & Methodology
   + write test first, and then write code to make the test success
   + for each push, need to ensure the new code does not break any of the tests (add and commit are still ok if the tests fail; just do not push to the github)
   + need to write tests to ensure 100% coverage (waiver is allowed case-by-case) for every new code
++ Teamworking
+  + Issues on github repo are used to create to-do lists and assign owners
+    + Each team member can create issues 
+    + Comments in issues are used to discuss and elaborate
+    + Each team member can assign to themselves issues to resolve
+  + Members can also discuss on a slack group
 
 Development Guildlines
 ----------------------
