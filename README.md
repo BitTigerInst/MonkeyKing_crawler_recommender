@@ -8,7 +8,7 @@ Inspired by BitTiger's tutorials on crawler and recommender, our goal is to buil
 Plan
 ----
 
-Based on our experiences on web development and descriptions metioned above, we take __Febrary, 2016__ as the __1st stage__ with the __primary__ goal of __prototyping__ our own crawler and recommender following the [Development Guildlines](https://github.com/BitTigerNY/AraChat/edit/master/README.md#Development Guildlines) metioned below. Here're some tentative schedules.
+Based on our experiences on web development and descriptions metioned above, we take __Febrary, 2016__ as the __1st stage__ with the __primary__ goal of __prototyping__ our own crawler and recommender following the __Development Guildlines__ metioned below. Here're some tentative schedules.
 
 * __[2016/02/05 - 2016/02/07]__ Project Selection, Plan Discussion, and Proposal Draft Writing
 * __[2016/02/08 - 2016/02/24]__ System Design, Resource Discovery, Project Implementation, Document Writing 
