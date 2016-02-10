@@ -12,16 +12,20 @@ Based on our experiences on web development and descriptions metioned above, we 
 
 * __[2016/02/05 - 2016/02/07]__ Project Selection, Plan Discussion, and Proposal Draft Writing
 * __[2016/02/08 - 2016/02/24]__ System Design, Resource Discovery, Project Implementation, Document Writing 
-  * crawler
-    * Follow and learn the code of Bittiger tutorial
-    * Re-write the code for another appstore, run it locally
-    * Modify the code for server (multiple workers)
-    * Deploy the code on server
-  * recommender
-    * Follow and learn the code of Bittiger tutorial
-    * Re-write the code for another appstore, run it locally
-    * Modify the code for server (multiple workers)
-    * Deploy the code on server
+  * locall run
+    * crawler
+      * Follow and learn the code of Bittiger tutorial
+      * Re-write the code for another appstore, run it locally
+    * recommender
+      * Follow and learn the code of Bittiger tutorial
+      * Re-write the code for another appstore, run it locally
+  * run on server (bonus)
+    * crawler
+      * Modify the code for server (multiple workers)
+      * Deploy the code on server
+    * recommender
+      * Modify the code for server (multiple workers)
+      * Deploy the code on server
 * __[2016/02/25 - 2016/02/29]__ User Manual Writing and Video Presentation Making
 
 _Details of each schedule and task will be added later._
@@ -37,18 +41,15 @@ Language, Framework & Methodology
 
 + Python 2.7.10, and 'pip install' following:
   + pylint
-  + coverage
-+ Test Driven Development (TDD)
-  + http://chimera.labs.oreilly.com/books/1234000000754/index.html
-  + write test first, and then write code to make the test success
-  + for each push, need to ensure the new code does not break any of the tests (add and commit are still ok if the tests fail; just do not push to the github)
-  + need to write tests to ensure 100% coverage (waiver is allowed case-by-case) for every new code
 + Teamworking
   + Issues on github repo are used to create to-do lists and assign owners
     + Each team member can create issues 
     + Comments in issues are used to discuss and elaborate
     + Each team member can assign to themselves issues to resolve
   + Members can also discuss on a slack group
++ build necessary tests
+  + write tests to ensure the main function of one's own code works
+  + one can push the code even it does not pass the tests; just write something in the commit info to explain, so that others can help
 
 Development Guildlines
 ----------------------
