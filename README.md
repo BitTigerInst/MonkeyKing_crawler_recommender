@@ -40,7 +40,7 @@ Language, Framework & Methodology
 --------------------
 
 + Python 2.7.10, and 'pip install' following:
-  + pylint
+  + pylint (use it to check code quality, and preferrably pass the check)
 + Teamworking
   + Issues on github repo are used to create to-do lists and assign owners
     + Each team member can create issues 
