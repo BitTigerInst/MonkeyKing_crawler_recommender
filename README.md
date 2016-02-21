@@ -15,11 +15,12 @@ Based on our experiences on web development and descriptions metioned above, we 
   * locall run
     * crawler
       * Follow and learn the code of Bittiger tutorial
-      * Re-write the code for another appstore, run it locally
-    * recommender
+      * Re-write the simple code for another appstore, run it locally
+      * Save results into MongoDB
+    * recommender (next project)
       * Follow and learn the code of Bittiger tutorial
       * Re-write the code for another appstore, run it locally
-  * run on server (bonus)
+  * run on server (next project)
     * crawler
       * Modify the code for server (multiple workers)
       * Deploy the code on server
@@ -42,6 +43,7 @@ Language, Framework & Methodology
 + Python 2.7.10, and 'pip install' following:
   + scrapy
   + pylint (use it to check code quality, and preferrably pass the check)
+  + pymongo
 + Teamworking
   + Issues on github repo are used to create to-do lists and assign owners
     + Each team member can create issues 
