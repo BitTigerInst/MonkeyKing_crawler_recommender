@@ -22,10 +22,11 @@ class XiaomiSpider(scrapy.Spider):
       item = XiaomiAppstoreCrawlerItem()
       item['title'] = li.xpath('./h5/a/text()'). \
           extract_first().encode('utf-8')
-      item['url'] = li.xpath('./h5/a/@href').extract_first()
-      appid = re.match(r'/detail/(.*)', item['url']).group(1)
+      url = li.xpath('./h5/a/@href').extract_first()
+      appid = re.match(r'/detail/(.*)', url).group(1)
       item['appid'] = appid
       item['intro'] = '' # TODO: need to get intro after entering the app detail page
+      item['recommended'] = ''
       yield item
 
       
