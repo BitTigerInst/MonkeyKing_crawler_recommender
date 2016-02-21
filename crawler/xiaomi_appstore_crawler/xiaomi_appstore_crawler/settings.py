@@ -65,6 +65,11 @@ ITEM_PIPELINES = {
     'xiaomi_appstore_crawler.pipelines.XiaomiAppstoreCrawlerPipeline': 300,
 }
 
+MONGODB_SERVER = "localhost"
+MONGODB_PORT = 27017
+MONGODB_DB = "xiaomi"
+MONGODB_COLLECTION = "apps"
+
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 # NOTE: AutoThrottle will honour the standard settings for concurrency and delay
