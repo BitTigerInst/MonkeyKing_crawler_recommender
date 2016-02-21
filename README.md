@@ -17,10 +17,10 @@ Based on our experiences on web development and descriptions metioned above, we 
       * Follow and learn the code of Bittiger tutorial
       * Re-write the simple code for another appstore, run it locally
       * Save results into MongoDB
-    * recommender (next project)
+    * recommender __(next project)__
       * Follow and learn the code of Bittiger tutorial
       * Re-write the code for another appstore, run it locally
-  * run on server (next project)
+  * run on server __(next project)__
     * crawler
       * Modify the code for server (multiple workers)
       * Deploy the code on server
