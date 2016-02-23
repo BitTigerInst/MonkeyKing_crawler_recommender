@@ -7,6 +7,7 @@
 
 import pymongo
 from scrapy.conf import settings
+from scrapy import log
 
 class XiaomiAppstoreCrawlerPipeline(object):
     def __init__(self):
@@ -31,7 +32,7 @@ class XiaomiAppstoreCrawlerPipeline(object):
                 raise DropItem("Missing {0}!".format(data))
         if valid:
             self.collection.insert(dict(item))
-            log.msg("Question added to MongoDB database!",
+            log.msg("new app added to MongoDB database!",
                     level=log.DEBUG, spider=spider)
 
         return item
