@@ -4,12 +4,12 @@
 Description
 -----------
 
-Inspired by BitTiger's tutorials on crawler and recommender, our goal is to build one to crawl the data from xiaomi appstore.
+Inspired by BitTiger's tutorials on crawler and recommender, our goal is to build them to crawl the data from xiaomi appstore.
 
 Plan
 ----
 
-Based on our experiences on web development and descriptions metioned above, we take __Febrary, 2016__ as the __1st stage__ with the __primary__ goal of __prototyping__ our own crawler and recommender following the __Development Guildlines__ metioned below. Here're some tentative schedules.
+Here're some tentative schedules.
 
 * __[2016/03/01 - 2016/03/05]__ Project Selection, Plan Discussion, and Proposal Draft Writing
 * __[2016/03/06 - 2016/03/24]__ System Design, Resource Discovery, Project Implementation, Document Writing 
