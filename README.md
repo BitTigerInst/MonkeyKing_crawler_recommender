@@ -1,33 +1,32 @@
 # MonkeyKing_crawler_recommender
+@team: MonkeyKing01
 
 Description
 -----------
 
-Inspired by BitTiger's tutorials on crawler and recommender, our goal is to build one to crawl the data from xiaomi appstore.
+Inspired by BitTiger's tutorials on crawler and recommender, our goal is to build them to crawl the data from xiaomi appstore.
 
 Plan
 ----
 
-Based on our experiences on web development and descriptions metioned above, we take __Febrary, 2016__ as the __1st stage__ with the __primary__ goal of __prototyping__ our own crawler and recommender following the __Development Guildlines__ metioned below. Here're some tentative schedules.
+Here're some tentative schedules.
 
-* __[2016/02/05 - 2016/02/07]__ Project Selection, Plan Discussion, and Proposal Draft Writing
-* __[2016/02/08 - 2016/02/24]__ System Design, Resource Discovery, Project Implementation, Document Writing 
-  * locall run
-    * crawler
+* __[2016/03/01 - 2016/03/05]__ Project Selection, Plan Discussion, and Proposal Draft Writing
+* __[2016/03/06 - 2016/03/24]__ System Design, Resource Discovery, Project Implementation, Document Writing 
+  * crawler
+    * crawler locally run __(previous project)__
       * Follow and learn the code of Bittiger tutorial
-      * Re-write the simple code for another appstore, run it locally
+      * Re-write for another appstore, run it locally
       * Save results into MongoDB
-    * recommender __(next project)__
+    * crawler running on server
+      * Modify the code for server (multiple workers)
+      * Deploy the code on server
+  * recommender __(next project)__
+    * recommender locally run __(next project)__
       * Follow and learn the code of Bittiger tutorial
       * Re-write the code for another appstore, run it locally
-  * run on server __(next project)__
-    * crawler
-      * Modify the code for server (multiple workers)
-      * Deploy the code on server
-    * recommender
-      * Modify the code for server (multiple workers)
-      * Deploy the code on server
-* __[2016/02/25 - 2016/02/29]__ User Manual Writing and Video Presentation Making
+    * recommender running on server __(next project)__
+* __[2016/03/25 - 2016/03/30]__ User Manual Writing and Video Presentation Making
 
 _Details of each schedule and task will be added later._
 
@@ -62,7 +61,5 @@ Development Guildlines
 - __Minimalism.__ Each module should be kept short, simple, and concise. Every piece of code should be transparent upon first reading. 
 - __Easy extensibility.__ New modules (as new classes and functions) are should be simply add, and existing modules should be extended easily.
 
-Owner
------
 
-@team: MonkeyKing
+
