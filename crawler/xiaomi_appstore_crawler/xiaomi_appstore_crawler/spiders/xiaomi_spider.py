@@ -1,4 +1,5 @@
 import scrapy
+from scrapy import Request
 import re
 from scrapy.selector import Selector
 from xiaomi_appstore_crawler.items import XiaomiAppstoreCrawlerItem
@@ -18,7 +19,7 @@ class XiaomiSpider(scrapy.Spider):
     page_nexts = page.xpath('//div[@class="pages"]/a')
     page_max = int(page_nexts[-2].xpath('text()').extract_first())
 
-    for page_id in xrange(1, page_max + 1):
+    for page_id in xrange(1, 2): #xrange(1, page_max + 1):
       url = '{0}{1}'.format('http://app.mi.com/topList?page=', str(page_id)) 
       yield scrapy.Request(url, callback=self.parse_page)
 
@@ -29,7 +30,7 @@ class XiaomiSpider(scrapy.Spider):
     if lis == None:
       return
 
-    url_common = 'http://app.mi.com/'
+    url_common = 'http://app.mi.com'
 
     for li in lis:
       item = XiaomiAppstoreCrawlerItem()
@@ -38,6 +39,15 @@ class XiaomiSpider(scrapy.Spider):
       url = li.xpath('./h5/a/@href').extract_first()
       appid = re.match(r'/detail/(.*)', url).group(1)
       item['appid'] = appid
-      item['intro'] = '' # TODO: need to get intro after entering the app detail page
-      item['recommended'] = ''
+      #import pudb; pu.db
+      req = scrapy.Request(url_common + url, callback=self.parse_details)
+      req.meta["item"] = item
+      yield req
+
+  def parse_details(self, response):
+      item = response.meta["item"]
+      item['intro'] = 'test' 
+      item['recommended'] = 'test'
+      #import pudb; pu.db
       yield item
+
