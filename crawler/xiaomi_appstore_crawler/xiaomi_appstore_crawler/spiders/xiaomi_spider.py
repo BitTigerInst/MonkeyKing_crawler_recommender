@@ -1,10 +1,11 @@
 import scrapy
+from scrapy.spiders import Spider
 from scrapy import Request
 import re
 from scrapy.selector import Selector
 from xiaomi_appstore_crawler.items import XiaomiAppstoreCrawlerItem
 
-class XiaomiSpider(scrapy.Spider):
+class XiaomiSpider(Spider):
   name = "xiaomi"
   allowed_domains = ["app.mi.com"]
 
@@ -34,20 +35,27 @@ class XiaomiSpider(scrapy.Spider):
 
     for li in lis:
       item = XiaomiAppstoreCrawlerItem()
-      item['title'] = li.xpath('./h5/a/text()'). \
-          extract_first().encode('utf-8')
+      item['title'] = li.xpath('./h5/a/text()').extract_first().encode('utf-8')
       url = li.xpath('./h5/a/@href').extract_first()
       appid = re.match(r'/detail/(.*)', url).group(1)
       item['appid'] = appid
-      #import pudb; pu.db
+      # import pudb; pu.db
       req = scrapy.Request(url_common + url, callback=self.parse_details)
       req.meta["item"] = item
       yield req
 
   def parse_details(self, response):
       item = response.meta["item"]
-      item['intro'] = 'test' 
-      item['recommended'] = 'test'
+      page = Selector(response)
+      lis = page.xpath('//div[@class="second-imgbox"]/ul/li')
+      
+      recommended = []
+      for li in lis:
+        url = li.xpath('./a/@href').extract_first()
+        appid = re.match(r'/detail/(.*)', url).group(1)
+        recommended.append(appid)
+
+      item['recommended'] = recommended
       #import pudb; pu.db
       yield item
 
