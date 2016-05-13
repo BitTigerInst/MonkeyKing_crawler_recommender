@@ -1,6 +1,5 @@
 # MonkeyKing_crawler_recommender
-@team: MonkeyKing01
-Team Leader: Steven Yan
+@team: MonkeyKing01; Team Leader: Steven Yan
 
 Description
 -----------
